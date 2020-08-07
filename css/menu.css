@@ -1,0 +1,130 @@
+header{
+	position: fixed;
+	width: 100%;
+	background-color:#370A01;	 
+}
+#btn-menu{
+	display: none
+}
+header label{
+	display:block;
+	margin-top:0px;
+	text-align: center;
+	font-size:20px;
+	height:50px;
+	width:110px;
+	border-right:2px solid #fff;
+	padding:10px;
+	display:none;
+	color: #fff;
+	font-family: 'Russo One', sans-serif;
+}
+
+header label :hover{
+	background:rgba(255,255,255,0.2);
+	cursor: pointer;
+}
+.menu ul{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	list-style: none;
+	flex-grow:1}
+.menu li:hover{
+	background: rgba(255,255,255,0.2);
+	cursor: pointer;
+}
+.menu li a {
+	font-family:'Russo One', sans-serif;
+	font-size:20px;
+	display: block;
+	padding: 20px 20px;
+	border-right: 1px solid #fff;
+	text-decoration: none;
+	color:#fff;
+}
+label span{
+	color: #fff
+}
+.menu span{
+	color: #fff
+}
+@media (max-width:768px){
+	header label{
+		display: block;}
+	header label:hover{
+		background:rgba(255,255,255,0.2);
+	cursor: pointer;}
+	.menu{
+		position: absolute;
+		background:#370A01;
+		width: 70%;
+		margin-left: -80%;
+
+	}
+	.menu ul {
+		flex-direction:column;
+	}
+	.menu li {
+		border: 1px solid #fff;
+	}
+	#btn-menu:checked ~.menu{
+		transform:all;
+		transition: 1.2s ;
+		margin-left:-5%;
+	}
+
+}
+@media (min-width:1024px){
+	.banner{
+		margin-top:66px
+	}
+}
+@media (max-width:468px){
+	#cuadro img{
+		height: 80vw
+	}
+}
+footer .contenedor0{
+	background: #D5D4E2;
+	
+	display: flex;
+	justify-content: center;
+	flex-wrap:wrap; 
+}
+.sociales{
+ width:100%;
+ text-align: center;
+ font-size:35px;
+ margin: 0px 30px;
+}
+.copy{
+	color:#370A01; 
+	font-size: 15px;
+	padding:10px;
+	
+	font-family:'Russo One', sans-serif;
+
+}
+.copy :hover{
+	cursor: pointer;
+	background: rgba(255,255,255,0.3);
+}
+.sociales a {
+	text-decoration: none;
+}
+@media (max-width:768px){
+	.sociales{
+		width: auto;
+	}
+	footer .contenedor0 {
+		justify-content: space-between;
+
+	}
+	.copy{
+	color:#370A01; 
+	font-size: 15px;
+	font-family:'Russo One', sans-serif;}
+
+}
+
